@@ -1,0 +1,31 @@
+{
+  "name": "ett-discord-bot",
+  "version": "1.0.0",
+  "description": "This is the discord bot for ETT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./lib/index.js",
+    "build": "tsc --build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SwingRipper/ETT-Discord-Bot.git"
+  },
+  "keywords": [
+    "Pathfinder",
+    "Discord",
+    "Rules",
+    "Lawyer"
+  ],
+  "author": "Sean Cohen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SwingRipper/ETT-Discord-Bot/issues"
+  },
+  "homepage": "https://github.com/SwingRipper/ETT-Discord-Bot#readme",
+  "dependencies": {
+    "discord.js": "^13.7.0",
+    "dotenv": "^16.0.1"
+  }
+}
