@@ -1,8 +1,18 @@
 import dotenv from 'dotenv';
 import * as Discord from 'discord.js';
+import express from 'express';
+
+const APP = express();
+const PORT: number = 200;
+
+APP.get('/', (req: any, res: any) => {
+    console.log("Get request");
+    res.send('Hello World!')
+});
+
+APP.listen(PORT, () => console.log(`Discord bot app listening at http://localhost:${PORT}`));
 
 dotenv.config();
-
 
 const client = new Discord.Client({
     intents: [
